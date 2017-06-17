@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="akarshbachu.asynctaskdemo.MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multiplication Using 'telusko.com' sending numbers to it and getting result in background"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+         />
+    <EditText
+        android:id="@+id/fnum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Number"
+        android:layout_below="@id/tv"
+        />
+    <EditText
+        android:id="@+id/snum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Second Number"
+        android:layout_below="@id/fnum"
+        />
+
+    <Button
+        android:id="@+id/mul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Multiply" />
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:hint="Result"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/mul"
+        android:layout_toEndOf="@+id/mul" />
+
+</RelativeLayout>
